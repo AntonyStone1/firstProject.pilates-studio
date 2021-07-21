@@ -1,0 +1,603 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    width: auto;
+    max-width: 1440px;
+    min-width: 1080px;
+    margin: 0 auto;
+    padding: 0 40px;        
+}
+.bg {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    transform-origin: 150px 0;
+    background-image: url(img/bggreensircl.png);
+    background-repeat: no-repeat;
+    transform: scale(1.3);
+    filter: saturate(1.5) brightness(0.7) contrast(0.8);
+    background-position: -600px -600px;        
+}
+
+/* header*/
+.main-header {
+    max-width: 1440px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    z-index: 2;
+}
+
+.site-navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: auto;
+    font-weight: 600;
+    text-shadow: green;   
+}
+
+.site-navigation-item {
+    margin: 20px 10px 20px 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    z-index: 100;
+}
+
+
+.site-navigation-item a:hover {
+    color: lightgray;
+    padding-bottom: 4px;
+    border-bottom: 2px solid white;
+    transition: 0.2s;
+}
+
+.nav-tel {
+    text-decoration: none;
+    color: black;    
+    font-weight: bolder;
+    font-size: 0.9em; 
+    z-index: 10;     
+}
+.nav-tel:hover {
+    color: gray;
+    transition: 0.3s;
+    
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* main headline*/
+main {
+    height: auto;
+}
+.headline-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 600px;
+    width: 450PX;
+}
+
+.headline-box-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+.headline-box h1 {
+    display: inline-block;
+    width: 350px;    
+    font-size: 3em;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 2;    
+}
+.headline-box p {    
+    font-size: 0.9em;
+    color: white;
+    width: 400px;
+ 
+}
+/* botton art*/
+.headline a, .low a, .midle a, .height a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    padding: 10px 45px 10px 45px;
+    margin-top: 20px; 
+    border: 2px solid white;
+    border-radius: 2em;    
+}
+.headline a:hover, .low a:hover, .midle a:hover, .height a:hover {
+    color: lightgray;
+    transition: 0.3s;
+}
+.arrow-nav {
+    position: absolute;
+    right: 2%;
+    top: -5%;
+    font-size: 2em;
+}
+
+.headline {
+    position: relative;
+}
+.headline img {
+    position: absolute;
+    left: 280px;
+    top: -260px;
+    padding: 0px;
+}
+
+/* main pilates-info */
+
+.pilates-info-box {
+    position: relative;
+    height: auto;
+    margin-bottom: 400px;
+}
+.pilates-info h2, .price h2, .reviews h2 {
+    font-size: 1.9em;
+    font-weight: 500;
+}
+.line {
+    display: inline-block;
+    transform: translatey(-0.3em);
+    width: 25px;
+    border-bottom: 2px solid black;
+
+}
+
+.pilates-info-text {
+    position: relative;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    width: 400px;
+}
+.pilates-info-text a {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: green;
+}
+.pilates-info-text a:hover {
+    color: lightgreen;
+}
+.arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid green;
+    border-right: 2px solid green;    
+    transform: rotate(45deg);
+}
+
+   
+.pilates-info {
+    position: relative;
+    height: auto;
+}
+.pilates-info img {
+    position: absolute;
+    left: 320px;
+    top: 30px;
+    padding-left: 0;
+}
+
+/* main price*/
+.price  {
+    max-width: auto;
+    min-width: 400px;
+}
+.price-container {
+    display: flex;
+    justify-content: center;   
+    width: auto;
+}
+.price-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    width: auto;
+    min-width: 400px;
+    list-style: none;
+}
+.price-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 360px;
+    height: 500px;
+    margin: 10px;    
+    border-radius: 5px;
+} 
+ .low {
+    background-color: #c9d5ad;
+
+}
+.midle {
+    background-color: #b4c38a;
+}
+.height {
+    background-color: #9cb26a;
+}
+.low, .midle, .height {
+    font-size: 1.2em;
+}
+.price-list li:hover {
+    transform: translatey(-5px);    
+    transition: 0.3s;    
+}
+.price-list li a:hover {
+    color:  gray;
+    transition: 0.3s;
+}
+.price-list h3, .price-list p {
+    align-self: flex-start;
+    padding-left: 50px;
+}
+.price-list h3 {
+    width: 100px;
+    font-size: 0.6em;    
+    text-transform: uppercase;    
+}
+.price-list span {
+    font-size: 1.7em;
+}
+.price-list p {
+    font-weight: 600;
+    font-size: 1em;
+}
+.price-list .arrow-nav {
+    top: -4px;
+}
+
+/*main rewievs */
+
+.rewievs-container {      
+    width: auto;
+}
+.rewievs-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 100%;
+    padding-left: 0;
+    list-style: none;
+}
+.rewievs-list li {
+    display: flex;    
+    width: 360px;    
+    margin-right: 20px;
+    box-shadow: 0 0 4px 10px rgb(252, 252, 252);    
+}
+.rewievs-list blockquote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.rewievs-list img {
+    border-radius: 50%;
+}
+.rewievs-list cite {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3em;    
+}
+.rewievs-list p {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* footer */
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #9cb26a;
+    align-items: center; 
+}
+
+.main-footer p {
+    color: white;
+    padding-left: 20px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;           
+    width: 120px;
+    height: 30px;
+}
+.social-list-item a {
+}
+.social-list-item a img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    
+}
+
+/* iPad */
+@media (max-width: 960px) {
+    body {
+    min-width: 400px;
+    }
+
+    .price {
+        min-width: 760px;
+        width: 766px;
+        margin-right: 0;
+    }
+    .price-info {        
+        width: 400px;
+        height: 400px;       
+    } 
+    .price-info h3, .price-info p, .price-info a {
+        font-size: 0.5em;
+        padding: 0;
+        margin: 0;
+       line-height: 1.4em;
+    }
+    .price-info .arrow-nav {
+        transform: translatey(13px);
+    }
+    .rewievs-list li {
+        font-size: 80%;            
+        width: 260px;
+        height: auto;    
+    }
+
+
+/* 660px */
+@media (max-width: 660px) {
+
+    
+    .rewievs-list li {
+        font-size: 80%;            
+        width: 360px;
+        height: auto;    
+    }
+
+}
+
+/* Phone viev 375px*/
+@media (max-width: 375px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 375px;
+        min-width: 375px;
+        font-size: 0.8em;
+        margin: 0; 
+        padding: 0;              
+    }
+    .line {
+        
+    }
+    
+    
+
+    
+
+
+
+
+
+
+
+    .headline-box, .pilates-info, .price, .rewievs {
+        padding: 40px;
+    }
+    .site-navigation-item, .nav-tel {
+        display: none;
+    }
+    nav {
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .nav-logo {
+        margin: 5px 0px 20px 20px; 
+    }
+    .bg {
+        width: 600px;
+        transform: scale(0.5);
+        left: -80px;
+        
+    }
+
+
+
+    main {
+        height: auto;
+    }
+
+    
+
+
+    .headline-box {
+        transform: scale(0.7);
+        transform-origin: 0px -150px ;
+        height: auto;
+        margin-bottom: 0;
+    }
+    
+    .headline {
+        position: relative;
+    }
+    .headline p, .headline a, .headline img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .headline .arrow-nav {
+        margin: 0;
+        transform: translatey(4px);
+    }
+    .headline img {
+        position: absolute;
+        transform: scale(0.3);        
+        left: -180px;
+    }
+    .headline a {
+        margin-top: 0;
+    }
+    .arrow-nav {
+        margin: 0px;
+        transform: translatey(13px);
+    }    
+
+
+    
+    
+    .pilates-info-box {
+        position: relative;
+        margin-bottom: 75px;
+        height: 300px;
+    }
+    .pilates-info {
+        height: 300px;
+        
+    }
+    .pilates-info img {
+        position: absolute;
+        left: -180px;
+        top: -50px;       
+        transform: scale(0.25);
+    } 
+    .pilates-info-text p {
+        max-width: 230px;
+        line-height: 1.8em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        min-width: 290px;        
+        width: 375px;
+        padding: 40px;
+    }
+    .price-container {
+        width: 295px;
+    }
+    .price h2 {
+        align-self: flex-start;
+    }
+    .price-list {
+        display: flex;
+        align-items: center;
+        min-width: 280px;
+    }    
+    }
+    .price-info {
+        display: flex;        
+        width: 200px;
+        height: 200px;
+        line-height: 1.5em;        
+    }
+    .price-info h3, .price-info p {
+        align-self: flex-start;
+        padding: 0 20px;
+    }
+    .price-info li h3 {
+        font-size: 5;
+    }
+    .price-info a {
+        padding: 10px 35px 10px 35px;
+        border: 2px solid white;
+        margin-top: 25px;
+    }
+
+
+
+    .rewievs {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        margin-top: 10px;
+    }
+    .rewievs h2 {
+        padding-bottom: 10px;
+        align-self: flex-start;
+    }
+    .rewievs-list {
+        display: flex;
+        flex-direction: column;        
+    }
+    .rewievs-list blockquote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;           
+    }
+    .rewievs-list blockquote p, cite {
+        margin: 5px 5px;
+    }
+    .rewievs-list li {
+        display: flex;
+        justify-content: center;
+        font-size: 80%;            
+        width: 250px;
+        height: auto;         
+    }
+    .rewievs-list p {
+        padding-left: 10px;
+        width: 190px; 
+        padding-bottom: 10px;
+    }
+    .rewievs-list img {
+        transform: scale(0.8);        
+        margin: 5px;
+        box-shadow: 0 0 3px 2px gray,
+            0 0 2px 1px gray inset;
+    }
+
+
+    .main-footer {       
+        padding: 10px;
+    }
+    .social-list {
+        margin-right: 5px;
+    }
+    .main-footer p {
+        padding: 0px;
+    }
+    .social-list-item img {
+        transform: scale(0.5);   
+    }
+    
+
+
+}
